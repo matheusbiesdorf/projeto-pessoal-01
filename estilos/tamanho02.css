@@ -1,27 +1,15 @@
 @charset "UTF-8";
 
-*{
-    margin: 0px;
-    padding: 0px;
+i#icone_menu{
+    display: none;
 }
-
-body{
-    width: 100vw;
-    height: 100vh;
+menu{
+    display: block;
 }
-
-header{
-    background-color: darkorange;
+menu > ul > li{
+    display: inline-block;
 }
-
-nav{
-    background-color: darkgreen;
-}
-
 main{
-    background-color: darkgreen;
+    width: 740px;
 }
 
-footer{
-    background-color: darkred;
-}
