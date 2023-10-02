@@ -20,7 +20,7 @@
 body{
     background-color: #F2A057;
 
-    width: 100vw;
+    max-width: 100vw;
     min-height: 100vh;
     
 
