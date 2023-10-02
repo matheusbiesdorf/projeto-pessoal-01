@@ -1,11 +1,196 @@
 @charset "UTF-8";
 
+                    /* ---------- Globais ---------- */
+
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    
+
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    grid-template-rows: auto;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+div{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+                    /* ---------- header (LINHAS 1 A 3) ---------- */
+
+header{
+    background-color: darkorange;
+
+    grid-column: 1/7;
+    grid-row: 1/4;
+
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    grid-template-rows: repeat(3 , 1fr);
+}
+
+header > div{
+    background-color: white;
+    color: black;
+    font-size: 1.5em;
+
+    grid-column: 3/5;
+    grid-row: 2;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+                    /* ---------- nav (LINHA 4) ---------- */
+
+nav{
+    background-color: darkgreen;
+
+    grid-column: 1/7;
+    grid-row: 4;
+
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    grid-template-rows: auto ;
+
+}
+
+/* ICONE */
+
+i#icone_menu{
+    background-color: rgb(46, 46, 46);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer; /* Mãozinha ao passar por cima */
+}
+
+i#icone_menu:hover{
+    background-color: white;
+    color: black;
+}
+
+menu{
+    display: none;
+}
+
+menu > ul{
+    list-style-type: none;
+}
+
+menu > ul > li > a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(80, 80, 80);
+    color: white;
+    text-align: center;
+    border-top: 2px solid grey;
+}
+
+menu > ul > li > a:hover{
+    background-color: grey;
+}
+
+/* FILTROS */
+
+nav > div{
+    background-color: rgb(80, 80, 80);
+    color: white;
+
+    grid-column: 6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+                    /* ---------- main (LINHAS 5 A 16)---------- */
+
+main{
+    background-color: darkblue;
+
+    grid-column: 1/7;
+    grid-row: 5/17;
+
+    display: grid;
+    grid-template-columns: (6 , 1fr);
+    grid-template-rows: (18, 1fr);
+}
+
+/* aside */
+
+aside{
+    display: none;
+}
+
+/* tela dos produtos */
+
+article{
+    background-color: chartreuse;
+
+    grid-column: 1/7;
+    grid-row: 1/19;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+.produto{
+    width: 180px;
+    height: 180px;
+    margin: 5px 0px;
+    display: grid;
+}
+
+.imagem_produto{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto_produto{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+                    /* ---------- footer (LINHA 17) ---------- */
+
+footer{
+    background-color: darkred;
+    grid-column: 1/7;
+    grid-row: 17;
+    
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    grid-template-rows: repeat(3 , 1fr);
+}
+
+footer > div{
+    background-color: white;
+    font-size: 1.2em;
+
+    grid-column: 3/5;
+    grid-row: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -9,3 +9,19 @@ body{
     width: 100vw;
     height: 100vh;
 }
+
+header{
+    background-color: darkorange;
+}
+
+nav{
+    background-color: darkgreen;
+}
+
+main{
+    background-color: darkgreen;
+}
+
+footer{
+    background-color: darkred;
+}
