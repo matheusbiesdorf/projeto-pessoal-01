@@ -13,3 +13,7 @@ main{
     width: 740px;
 }
 
+main > aside{
+    display: none;
+}
+

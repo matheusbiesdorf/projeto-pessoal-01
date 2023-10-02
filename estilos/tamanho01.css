@@ -115,17 +115,24 @@ menu > ul > li > a:hover{
                     /* ---------- main (LINHAS 5 A 16)---------- */
 
 main{
-    background-color: darkblue;
+    background-color: white;
     margin: auto;
 
     grid-column: 1/7;
     grid-row: 5/17;
 }
 
+/* filtros */
+
+main > aside{
+    display: none;
+}
+
 /* tela dos produtos */
 
 main > article{
     background-color: white;
+    padding: 5px 0px;
 
     display: flex;
     flex-wrap: wrap;
